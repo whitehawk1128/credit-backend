@@ -19,8 +19,8 @@ router.post('/', async (req, res) => {
       quantity: 1,
     }],
     metadata: { uid },
-    success_url: 'https://credit-backend-production.up.railway.app/?success=true',
-    cancel_url: 'https://credit-backend-production.up.railway.app/?cancelled=true',
+    success_url: 'https://ai-credit.vercel.app/?success=true',
+    cancel_url: 'https://ai-credit.vercel.app/?cancelled=true',
   });
 
   res.json({ url: session.url });
