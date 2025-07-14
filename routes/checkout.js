@@ -19,8 +19,8 @@ router.post('/', async (req, res) => {
       quantity: 1,
     }],
     metadata: { uid },
-    success_url: 'http://localhost:5173?success=true',
-    cancel_url: 'http://localhost:5173?cancelled=true',
+    success_url: 'https://credit-backend-production.up.railway.app/?success=true',
+    cancel_url: 'https://credit-backend-production.up.railway.app/?cancelled=true',
   });
 
   res.json({ url: session.url });
